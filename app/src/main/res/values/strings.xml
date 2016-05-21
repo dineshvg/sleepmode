@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SleepMode</string>
+    <string name="app_info">
+        App to make your phone go silent.
+    </string>
+    <string name="init_details">
+        Switching on Sleep mode allows you to keep phone on silent mode when face down.
+    </string>
+    <string name="modified_details">
+        Phone will be in silent mode when face down.
+    </string>
+    <string name="owner">
+        For issues mail to dineshvg1023@gmail.com
+    </string>
+    <string name="service_on_off">service on</string>
+    <string name="title_activity_Sleep">SleepActivity</string>
+    <string name="sleep_on">Sleep mode ON</string>
+    <string name="sleep_off">Sleep mode OFF</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/sleepContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="vg.dinesh.com.sleepmode.SleepActivity">
+
+    <TextView
+        android:id="@+id/app_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="@string/app_info"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_below="@+id/app_info"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:alpha="0.8"
+            android:textColor="@android:color/white"
+            android:textOn="@string/sleep_on"
+            android:textOff="@string/sleep_off"
+            android:checked="false"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/buttonLayout"
+            android:layout_alignStart="@+id/buttonLayout" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout2"
+        android:layout_below="@+id/buttonLayout"
+        android:layout_marginTop="50dp"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:text="Mail for Queries"/>
+        </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
