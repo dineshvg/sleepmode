@@ -5,3 +5,7 @@ Android application that turns the phone to silent mode on flipping it (Screen f
 This app is a simple application using the accelerometer sensor to detect the orientation of the phone.
 Based on knowing the orientation, the ring-mode of the phone is modified.
 
+
+Screen 1           |  Screen 2
+:-------------------------:|:-------------------------:
+![](https://raw.githubusercontent.com/dineshvg/sleepmode/master/SleepMode_1.png)  |  ![](https://github.com/dineshvg/sleepmode/blob/master/SleepMode_2.png)
