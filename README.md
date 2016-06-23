@@ -1,3 +1,7 @@
-# sleepmode
-Android app to put phone on silent mode on flipping it. 
-Open Source code, App available on store.
+##SleepMode
+
+Android application that turns the phone to silent mode on flipping it (Screen face down).
+
+This app is a simple application using the accelerometer sensor to detect the orientation of the phone.
+Based on knowing the orientation, the ring-mode of the phone is modified.
+
