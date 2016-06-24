@@ -1,5 +1,8 @@
 ##SleepMode
 
+
+[![](https://owncloud.org/wp-content/themes/owncloudorgnew/assets/img/clients/buttons/googleplay.png)](https://play.google.com/store/apps/details?id=vg.dinesh.com.sleepmode&hl=en)
+
 Android application that turns the phone to silent mode on flipping it (Screen face down).
 
 This app is a simple application using the accelerometer sensor to detect the orientation of the phone.
