@@ -1,4 +1,4 @@
-package vg.dinesh.com.sleepmode;
+package vg.dinesh.com.sleepmode2;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -6,7 +6,6 @@ import android.media.AudioManager;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.CompoundButton;
@@ -67,16 +66,20 @@ public class SleepActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 int modeVal = Manager.checkSilentMode(getApplicationContext());
+                //Save the current ring mode before changing to silent mode
+                SharedPref.init(getApplicationContext());
+                SharedPref.write(modeVal);
+
                 if (modeVal != AudioManager.RINGER_MODE_SILENT) {
                     if (FlipService.serviceRunning==false) {
-                        Log.d(TAG, "Service started");
+                        //Log.d(TAG, "Service started");
                         toggleButton.setChecked(true);
                         Intent startIntent = new Intent(getBaseContext(), MotionControlService.class);
                         startIntent.setAction(Constants.ACTION.STARTFOREGROUND_ACTION);
                         startService(startIntent);
                         startService(new Intent(getBaseContext(), FlipService.class));
                     } else {
-                        Log.d(TAG, "Service stopped");
+                        //Log.d(TAG, "Service stopped");
                         toggleButton.setChecked(false);
                         Intent startIntent = new Intent(getBaseContext(), MotionControlService.class);
                         startIntent.setAction(Constants.ACTION.STOPFOREGROUND_ACTION);

@@ -1,4 +1,4 @@
-package vg.dinesh.com.sleepmode;
+package vg.dinesh.com.sleepmode2;
 
 import org.junit.Test;
 

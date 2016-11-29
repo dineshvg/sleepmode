@@ -1,4 +1,4 @@
-package vg.dinesh.com.sleepmode;
+package vg.dinesh.com.sleepmode2;
 
 
 import android.app.Notification;
@@ -46,13 +46,13 @@ public class MotionControlService extends Service {
             Log.d(TAG, "service started");
             Notification notification = new NotificationCompat.Builder(this)
                     .setContentTitle("SleepMode")
-                    .setTicker("Sleep Mode On")
+                    //.setTicker("Sleep Mode On")
                     .setContentText(getResources().getString(R.string.sleep_on))
-                    .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
-                    .setSmallIcon(R.mipmap.ic_launcher)
+                    .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.vol_high))
+                    .setSmallIcon(R.drawable.vol_high)
                     .setContentIntent(pendingIntent)
                     .setOngoing(true)
-                    .addAction(android.R.drawable.ic_media_play, "Play", pplayIntent)
+                    //.addAction(android.R.drawable.ic_media_play, "Play", pplayIntent)
                     .build();
 
 
@@ -77,19 +77,24 @@ public class MotionControlService extends Service {
                     .setContentTitle("SleepMode")
                     .setTicker("Sleep Mode Off")
                     .setContentText(getResources().getString(R.string.sleep_off))
-                    .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.vol_on))
-                    .setSmallIcon(R.drawable.vol_on)
+                    .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.vol_off))
+                    .setSmallIcon(R.drawable.vol_off)
                     .setContentIntent(pendingIntent)
                     .setOngoing(true)
-                    .addAction(android.R.drawable.ic_media_play, "Play", pplayIntent)
+                    //.addAction(android.R.drawable.ic_media_play, "Play", pplayIntent)
                     .build();
 
             startForeground(Constants.NOTIFICATION_ID.FOREGROUND_SERVICE,
                     notification);
 
-        }else if (intent.getAction().equals(Constants.ACTION.PLAY_ACTION)){
+        }/*else if (intent.getAction().equals(Constants.ACTION.PLAY_ACTION)){
             Log.d(TAG,"Its clickable");
-        }
+            if(FlipService.serviceRunning) {
+                FlipService.serviceRunning = false;
+            } else {
+                startService(new Intent(getBaseContext(), FlipService.class));
+            }
+        }*/
         return START_STICKY;
     }
 }

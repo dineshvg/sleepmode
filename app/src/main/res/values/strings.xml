@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SleepMode</string>
+    <string name="app_name">SleepMode 2.0</string>
     <string name="app_info">
         App to make your phone go silent.
     </string>
@@ -14,6 +14,6 @@
     </string>
     <string name="service_on_off">service on</string>
     <string name="title_activity_Sleep">SleepActivity</string>
-    <string name="sleep_on">Sleep mode ON</string>
+    <string name="sleep_on"> Sleep mode ON </string>
     <string name="sleep_off">Sleep mode OFF</string>
 </resources>

@@ -1,4 +1,4 @@
-package vg.dinesh.com.sleepmode;
+package vg.dinesh.com.sleepmode2;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(myIntent);
             }
 
-        }, 3000);
+        }, 1500);
     }
 
     private void initListeners() {

@@ -1,9 +1,8 @@
-package vg.dinesh.com.sleepmode;
+package vg.dinesh.com.sleepmode2;
 
 
 import android.content.Context;
 import android.media.AudioManager;
-import android.util.Log;
 
 public class Manager {
 
@@ -13,13 +12,13 @@ public class Manager {
         AudioManager am = (AudioManager)context.getSystemService(Context.AUDIO_SERVICE);
         switch (am.getRingerMode()) {
             case AudioManager.RINGER_MODE_SILENT:
-                Log.i(TAG, "Silent mode");
+                //Log.i(TAG, "Silent mode");
                 return AudioManager.RINGER_MODE_SILENT;
             case AudioManager.RINGER_MODE_VIBRATE:
-                Log.i(TAG,"Vibrate mode");
+                //Log.i(TAG,"Vibrate mode");
                 return AudioManager.RINGER_MODE_VIBRATE;
             case AudioManager.RINGER_MODE_NORMAL:
-                Log.i(TAG, "Normal mode");
+                //Log.i(TAG, "Normal mode");
                 return AudioManager.RINGER_MODE_NORMAL;
         }
         return -1;

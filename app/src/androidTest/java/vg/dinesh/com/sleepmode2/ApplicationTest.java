@@ -1,4 +1,4 @@
-package vg.dinesh.com.sleepmode;
+package vg.dinesh.com.sleepmode2;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
